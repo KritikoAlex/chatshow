@@ -86,8 +86,6 @@ public class PlaceholderController {
 
             //Replace the pokemon placeholder with the actual text with the hover message
             message = message.replace(Pattern.compile("\\{pokemon[" + (number + 1) + "]}"), text);
-            System.out.println(message.replace(Pattern.compile("\\{pokemon[" + (number + 1) + "]}"), text).toPlain());
-            System.out.println(message.toPlain());
         }
         event.setMessage(Text.of(message));
     }
